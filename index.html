@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="widht-device-widht, initial-scale-1.0">
+	<title>Curiculum Vitae</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<a href="#" class="logo">Curiculum Vitae</a>
+		<div class="toggle" onclick="toggleMenu();"></div>
+		<ul class="menu">
+			<li><a href="#beranda" onclick="toggleMenu();"></>Beranda</a></li>
+			<li><a href="#tentang" onclick="toggleMenu();"></>Tentang</a></li>
+			<li><a href="#pendidikan" onclick="toggleMenu();"></>Pendidikan</a></li>
+			<li><a href="#karya" onclick="toggleMenu();"></>Karya</a></li>
+			<li><a href="#kontak" onclick="toggleMenu();"></>Kontak</a></li>
+		</ul>
+	</header>
+	<section class="banner" id="beranda">
+		<div class="textBx">
+			<h2>Hallo, Saya<br><span>Alviana Hermawati</span></h2>
+			<a href="#tentang" class="btn">Tentang Saya</a>
+		</div>
+	</section>
+	<section class="about" id="tentang">
+		<div class="heading">
+			<h2>Tentang Saya</h2>
+		</div>
+		<div class="isi">
+			<div class="isisaya">
+				<h3>Perkenalkan,</h3>
+				<p>Nama saya Alviana Hermawati, biasa dipanggil Alvi. Saya lahir pada 12 Juni 2001 di Sukoharjo. Saya adalah anak pertama dari tiga bersaudara. Hobi saya menonton film dan mendengarkan musik. Saya tertarik dengan bidang design grafis, terutama vectorart sehingga saya ingin mendalami bidang tersebut. Sejak saya SD, saya aktif mengikuti kegiatan pramuka sehingga dalam pribadi saya sudah terlatih untuk bisa bekerja sama yang baik, rukun, dan kompak dengan orang lain. Sekarang saya selain kuliah juga mengikuti organisasi Himpunan Mahasiswa Prodi PTIK dan Marching Band UNS, dimana dalam organisasi tersebut dapat melatih sifat bertanggung jawab, membagi waktu dan menentukan prioritas saya.</p>
+			</div>
+			<div class="w50">
+				<img src="images/ALPI.jpg" class="image">
+			</div>
+		</div>
+	</section>
+	<section class="education" id="pendidikan">
+		<div class="edudu">
+			<h2>Pendidikan</h2>
+			<p>Berikut ini adalah riwayat pendidikan saya :</p>
+		</div>
+		<div class="isi">
+			<div class="edu">
+				<img src="images/logosd.jpg">
+				<h2>2007-2013<br>SDN Dukuh 03</h2>
+			</div>
+			<div class="edu">
+				<img src="images/logosmp.png">
+				<h2>2013-2016<br>SMPN 02 Sukoharjo</h2>
+			</div>
+			<div class="edu">
+				<img src="images/logosma.jpg">
+				<h2>2016-2019<br>SMAN 01 Sukoharjo</h2>
+			</div>
+			<div class="edu">
+				<img src="images/logouns.png">
+				<h2>2019-sekarang<br>PTIK UNS</h2>
+			</div>
+		</div>
+	</section>
+	<section class="karya" id="karya">
+		<div class="karyaku">
+			<h2>Karya Saya</h2>
+			<p>Berikut ini adalah karya yang sudah saya buat :</p>
+		</div>
+		<div class="isi">
+			<div class="isikarya">
+				<img src="images/karya1.jpg">
+			</div>
+			<div class="isikarya">
+				<img src="images/karya2.jpg">
+			</div>
+		</div>
+	</section>
+	<section class="kontak" id="kontak">
+		<div class="kontaku">
+			<h2>Kontak Saya</h2>
+			<p>Anda dapat menghubungi saya di :</p>
+		</div>
+		<div class="isikontak">
+			<div class="isikontaksaya">
+				<img src="images/lokasi.png">
+				<h3>Alamat</h3>
+				<h4>Kalangan RT02/01, Dukuh, Sukoharjo,<br>Jawa Tengah, Indonesia 57524</h4>
+			</div>
+			<div class="isikontaksaya">
+				<img src="images/whatsapp.png">
+				<h3>WhatsApp</h3>
+				<h4>085725009083</h4>
+			</div>
+			<div class="isikontaksaya">
+				<img src="images/instagram.png">
+				<h3>Instagram</h3>
+				<h4>alvhema03_</h4>
+			</div>
+			<div class="isikontaksaya">
+				<img src="images/email.png">
+				<h3>Email</h3>
+				<h4>alviana.hermawati1261<br>@gmail.com</h4>
+			</div>
+		</div>
+	</section>
+	<div class="copyright">
+			<p>Copyright © 2020. Alviana. All Right Reserved.</p>
+	</div>
+	<script type="text/javascript">
+		window.addEventListener('scroll', function(){
+			var header = document.querySelector('header');
+			header.classList.toggle('sticky', window.scrollY > 0);
+		});
+		
+		function toggleMenu(){
+			var menuToggle = document.querySelector('.toggle');
+			var menu = document.querySelector('.menu');
+			menuToggle.classList.toggle('active')
+			menu.classList.toggle('active')
+		}
+	</script>
+</body>
+</html>

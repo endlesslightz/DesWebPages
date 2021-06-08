@@ -1,0 +1,419 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family : "Berlin Sans FB";
+	scroll-behavior: smooth;
+}
+section{
+	padding: 100px;
+}
+.banner{
+	position: relative;
+	min-height: 100vh;
+	background: black;
+	background-size: cover;
+	background-position: right;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.banner h2{
+	font-size: 3em;
+	color: hotpink;
+	font-weight: 500;
+	line-height: 1.5em;
+}
+.banner h2 span{
+	font-size: 1.5em;
+	font-weight: 700;
+	color: crimson;
+}
+.btn{
+	position: relative;
+	background: hotpink;
+	border-radius: 6px;
+	display: inline-block;
+	color: black;
+	margin-top: 20px;
+	padding: 10px 30px;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: 500;
+}
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 40px 100px;
+	z-index: 1000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.5s;
+}
+header.sticky{
+	background: crimson;
+	padding: 20px 100px;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+header .logo{
+	color: pink;
+	font-size: 24px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 500;
+	letter-spacing: 2px;
+}
+header .logo:hover{
+	color: crimson;
+}
+header.sticky .logo{
+	color: lightpink;
+}
+header.sticky .logo:hover{
+	color: hotpink;
+}
+header ul{
+	position: relative;
+	display: flex;
+}
+header ul li{
+	position: relative;
+	list-style: none;
+}
+header ul li a{
+	position: relative;
+	display: inline-block;
+	margin: 0 15px;
+	color: pink;
+	text-decoration: none;
+	font-size: 24px;
+}
+header ul li a:hover{
+	color: crimson;
+}
+header.sticky ul li a{
+	color: black;
+}
+header.sticky ul li a:hover{
+	color: pink;
+}
+.about{
+	background: pink;
+}
+.heading{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px;
+	color: black;
+}
+.heading h2{
+	font-weight: 600;
+	font-size: 40px;
+	text-transform: uppercase;
+}
+.isi{
+	display: flex;
+	justify-content: space-between;
+}
+.isisaya{
+	padding-right: 30px;
+	text-align: justify;
+	justify-content: space-between;
+	font-size: 20px;
+	line-height: 30px;
+}
+.isisaya h3{
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+.w50{
+	min-width: 32%;
+}
+img{
+	max-width: 100%;
+	border-radius: 25px;
+}
+.education{
+	background: black;
+}
+.edudu{
+	font-size: 30px;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px;
+	color: hotpink;
+}
+.edudu h2{
+	font-size: 40px;
+	text-transform: uppercase;
+}
+.education .isi .edu img{
+	width: 350px;
+    height: 410px;
+}
+.education .isi{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.education .isi .edu{
+	padding: 40px 20px;
+	background: pink;
+	color: black;
+	width: 400px;
+	margin: 20px;
+	text-align: center;
+	border-radius: 25px;
+	transition: 0.5s;
+}
+.education .isi .edu:hover{	
+	transform: scale(0.5);
+	background: crimson;
+}
+.karya{
+	background: pink;
+}
+.karyaku{
+	font-size: 30px;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px;
+	color: black;
+}
+.karyaku h2{
+	font-size: 40px;
+	text-transform: uppercase;
+}
+.karya .isi{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.karya .isi .isikarya img{
+	width: 350px;
+    height: 410px;
+}
+.karya .isi .isikarya{
+	padding: 40px 20px;
+	background: crimson;
+	color: black;
+	max-width: 100%;
+	margin: 20px;
+	text-align: center;
+	border-radius: 25px;
+	transition: 0.5s;
+}
+.karya .isi .isikarya:hover{	
+	transform: scale(0.5);
+	background: black;
+}
+.kontak{
+	background: black;
+}
+.kontaku{
+	font-size: 30px;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px;
+	color: hotpink;
+}
+.kontaku h2{
+	font-size: 40px;
+	text-transform: uppercase;
+}
+.kontak .isikontak{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.isikontak{
+	min-width: 10%;
+}
+.isikontaksaya{
+	position: relative;
+}
+.isikontaksaya h3{
+	font-size: 25px;
+	text-transform: uppercase;
+}
+.isikontaksaya h4{
+	font-size: 15px;
+	font-family: "Arial";
+}
+.kontak .isikontak .isikontaksaya img{
+	width: 350px;
+    height: 350px;
+}
+.kontak .isikontak .isikontaksaya{
+	padding: 40px 20px;
+	background: pink;
+	color: black;
+	max-width: 30%;
+	max-height: 10%;
+	margin: 20px;
+	text-align: center;
+	transition: 0.5s;
+	border-radius: 25px;
+	line-height: 25px;
+}
+.kontak .isikontak .isikontaksaya:hover{
+	transform: scale(0.5);
+	background: crimson;
+}
+.copyright{
+	background: pink;
+	text-align: center;
+	color: black;
+	padding: 5px;
+}
+
+/*responsive*/ 
+@media (max-width: 991px)
+{
+	header,
+	header.sticky
+	{
+		padding: 20px 50px;
+		z-index: 1000;
+	}
+	.menu{
+		position: fixed;
+		top: 67px;
+		left: -100%;
+		display: block;
+		padding: 100px 50px;
+		text-align: center;
+		width: 100%;
+		height: 100vh;
+		background: black;
+		transition: 0.5s;
+		z-index: 999;
+		border-top: 1px solid rgba(0,0,0,0.2);
+	}
+	.menu.active{
+		left: 0;
+	}
+	header ul li a{
+		color: pink;
+		font-size: 24px;
+		margin: 10px;
+	}
+	header ul li a:hover{
+		color: pink;
+	}
+	header.sticky ul li a{
+		color: lightpink;
+		font-size: 24px;
+		margin: 10px;
+	}
+	header.sticky ul li a:hover{
+		color: hotpink;
+	}
+	.toggle{
+		width: 40px;
+		height: 40px;
+		background: url(images/menu.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 30px;
+		cursor: pointer;
+	}
+	.toggle.active{
+		background: url(images/close.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 25px;
+		cursor: pointer;
+	}
+	header.sticky .toggle{
+		filter: invert(1);
+	}
+	section {
+		padding: 100px 50px;
+	}
+	.banner{
+		padding: 150px 50px 100px;
+	}
+	.banner h2 {
+		font-size: 2.5em;
+		font-weight: 500;
+	}
+	.banner h2 span {
+		font-size: 1.3em;
+		font-weight: 500;
+	}
+	.btn{
+		margin-top: 10px;
+		padding: 10px 20px;
+		font-size: 16px;
+	}
+	.heading h2 {
+		font-size: 24px;
+	}
+	.edudu{
+		font-size: 20px;
+	}
+	.edudu h2{
+		font-size: 24px;
+	}
+	.kontaku h2{
+		font-size: 24px;
+	}
+	.kontaku{
+		font-size: 20px;
+	}
+	.karyaku{
+		font-size: 20px;
+	}
+	.karyaku h2{
+		font-size: 24px;
+	}
+	.isi {
+		flex-direction: column
+	}
+	.w50 {
+		margin-bottom: 20px
+	}
+	.education .isi .edu{
+		margin: 15px;
+	}
+	.isikontaksaya h3 {
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+	.isikontaksaya h4 {
+		font-size: 12px;
+		font-family: "Arial";
+	}
+}
+@media (max-width: 600px)
+{
+	header,
+	header.sticky
+	{
+		padding: 20px 20px;
+	}
+	.banner{
+		padding: 150px 20px 100px;
+	}
+	section{
+		padding: 100px 20px;
+	}
+	.isikontaksaya h3 {
+		font-size: 15px;
+		text-transform: uppercase;
+	}
+	.isikontaksaya h4 {
+		font-size: 10px;
+		font-family: "Arial";
+	}
+}
+	
